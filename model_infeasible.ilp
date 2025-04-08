@@ -1,0 +1,11 @@
+\ Model MAF_Optimization_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+\ Signature: 0xbc241d45bffda480
+Maximize
+ 
+Subject To
+ R798: E_PU[0] <= 5200
+ qc0: E_PU[0] + [ ] = 5400
+Bounds
+ E_PU[0] free
+End
