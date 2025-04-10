@@ -1,6 +1,5 @@
 \ Model MAF_Optimization
 \ LP format - for model browsing. Use MPS format to capture full model detail.
-\ Signature: 0xa9dbce902da414fb
 Maximize
   - 39 y[0,0] - 84 y[0,1] - 114 y[0,2] - 135 y[0,3] - 360 y[0,4] - 39 y[1,0]
    - 84 y[1,1] - 114 y[1,2] - 135 y[1,3] - 360 y[1,4] - 39 y[2,0]
@@ -105,9 +104,8 @@ Maximize
    + 8000 z[1] + 8000 z[2] + 8000 z[3] + 8000 z[4] + 8000 z[5] + 8000 z[6]
    + 8000 z[7] + 8000 z[8] + 8000 z[9] + 8000 z[10] + 8000 z[11]
    + 8000 z[12] + 8000 z[13] + 8000 z[14] + 8000 z[15] + 8000 z[16]
-   + 8000 z[17] + 8000 z[18] + 8000 z[19] - 1.5 E_PU[0] - 1.5 E_PU[1]
-   - 1.5 E_PU[2] - 1.5 E_PU[3] - 1.5 E_PU[4] - 1.5 E_PU[5] - 1.5 E_PU[6]
-   - 1.5 E_PU[7]
+   + 8000 z[17] + 8000 z[18] + 8000 z[19] - E_PU[0] - E_PU[1] - E_PU[2]
+   - E_PU[3] - E_PU[4] - E_PU[5] - E_PU[6] - E_PU[7]
 Subject To
  R0: - delta[0] + w[0,0] + w[0,1] + w[0,2] + w[0,3] + w[0,4] + w[0,5]
    + w[0,6] + w[0,7] = 0
